@@ -1,0 +1,121 @@
+body {
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #FFC312, #B53471);
+    background-size: cover;
+    font-family: montserrat, sans-serif;
+}
+
+#container {
+    width: 600px;
+    height: 800px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 100px;
+    padding: 20px 0;
+}
+
+#container h3 {
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    padding: 80px 0 70px;
+}
+
+form {
+    margin: 0 60px;
+    font-size: 24px;
+}
+
+input,
+select {
+    margin-bottom: 30px;
+}
+
+input[type="text"] {
+    margin: 20px 0 40px;
+    width: 400px;
+    padding: 10px;
+    line-height: 20px;
+    font-size: 18px;
+    font-family: montserrat, sans-serif;
+    background-color: #efefef;
+    border: none;
+    border-radius: 20px;
+}
+
+input[type="button"] {
+    position: relative;
+    display: block;
+    margin: 60px auto 0;
+    padding: 20px 40px;
+    line-height: 20px;
+    font-size: 28px;
+    font-family: montserrat, sans-serif;
+    background-color: #6655cf;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+input[type="button"]:hover {
+    background-color: #887add;
+}
+
+input[type="button"]:active {
+    top: 1px;
+
+}
+
+input::placeholder {
+    font-size: 18px;
+    color: #aaa;
+}
+
+.select_box {
+    margin: 20px 0 40px;
+    width: 400px;
+    padding: 10px;
+    line-height: 20px;
+    font-size: 18px;
+    font-family: montserrat, sans-serif;
+    background-color: #efefef;
+    border: none;
+    border-radius: 20px;
+}
+
+.select_box:after {
+    margin: 20px 0 40px;
+    width: 400px;
+    padding: 10px;
+    line-height: 20px;
+    font-size: 18px;
+    font-family: montserrat, sans-serif;
+    background-color: #efefef;
+    border: none;
+    border-radius: 20px;
+    z-index: 98;
+}
+
+.select_box select {
+    width: 400px;
+    border: 0;
+    position: relative;
+    z-index: 99;
+    background: none;
+    font-size: 18px;
+    font-family: montserrat, sans-serif;
+    margin: 0;
+}
+
+.select_box option {
+    margin: 20px 0 40px;
+    width: 400px;
+    padding: 10px;
+    line-height: 20px;
+    font-size: 18px;
+    font-family: montserrat, sans-serif;
+    background-color: #efefef;
+}
