@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Tip Calculator</title>
     <link href="reset.css" rel="stylesheet">
     <link href="stylesheet.css" rel="stylesheet">
 </head>
@@ -11,9 +11,9 @@
     <div id="container">
         <h3>Tip Calculator</h3>
         <form>
-            <div id="calculator">
+            
                 <p>How much was you bill?</p>
-                <input type="text" placeholder="Bill amount">
+                <input type="text" placeholder="Bill amount" autofocus required>
 
                 <p>How was your sevice?</p>
 
@@ -28,9 +28,9 @@
                 </div>
 
                 <p>How many people are sharing the bill?</p>
-                <input type="text" placeholder="number of people">
-                <input id="sumbit" type="button" value="CALCULATE!">
-            </div>
+                <input type="text" placeholder="number of people" required>
+                <input id="sumbit" type="submit" value="CALCULATE!">
+            
         </form>
     </div>
 </body></html>
