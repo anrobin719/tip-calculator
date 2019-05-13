@@ -3,34 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>Tip Calculator</title>
-    <link href="reset.css" rel="stylesheet">
-    <link href="stylesheet.css" rel="stylesheet">
+    <link href="src/reset.css" rel="stylesheet">
+    <link href="src/stylesheet.css" rel="stylesheet">
 </head>
 
 <body>
     <div id="container">
         <h3>Tip Calculator</h3>
         <form>
-            
                 <p>How much was you bill?</p>
-                <input type="text" placeholder="Bill amount" autofocus required>
+                <input id="bill" type="text" placeholder="Bill amount" autofocus required>
 
-                <p>How was your sevice?</p>
-
+                <!--select option-->
+                <p>How was your service?</p>
                 <div class="select_box">
-                    <select>
-                        <option selected="selected" disabled="disabled">Choose an option</option>
-                        <option value="0.3">awesome</option>
-                        <option value="0.2">good</option>
-                        <option value="0.15">soso</option>
-                        <option value="0.1">terrible</option>
+                    <select id="service">
+                        <option selected disabled value="0">Choose an option</option>
+                        <option value="0.3">awesome 30%</option>
+                        <option value="0.2">good 20%</option>
+                        <option value="0.15">soso 15%</option>
+                        <option value="0.1">terrible 10%</option>
                     </select>
                 </div>
 
+                <!--sharing bill-->
                 <p>How many people are sharing the bill?</p>
-                <input type="text" placeholder="number of people" required>
-                <input id="sumbit" type="submit" value="CALCULATE!">
-            
+                <input id="people" type="text" placeholder="number of people" required>
+
+                <!--submit button-->
+                <input id="submit" type="submit" value="Check Out!">
         </form>
-    </div>
+        
+        <!--result-->
+        <div id="result">
+            <sup>$</sup><span>0.00</span>
+            <small id="each">each</small>
+        </div><!--result-->
+
+    </div><!--container-->
+    <script src="src/calcutator.js"></script>
 </body></html>
