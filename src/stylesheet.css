@@ -4,7 +4,7 @@ body {
     background-size: cover;
     font-family: montserrat, sans-serif;
     font-size: 16px;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 #container {
